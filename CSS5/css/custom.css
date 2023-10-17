@@ -1,0 +1,505 @@
+/* DOCUMENT LEVEL DOCUMENT LEVEL DOCUMENT LEVEL DOCUMENT LEVEL DOCUMENT LEVEL */
+:root {
+    --main-color: rgb(215, 215, 215);
+    --main-bg-color: black;
+    --alt-bg-color: rgb(25, 25, 25);
+    --bold-color: white;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+html {
+    background-color: var(--alt-bg-color);
+}
+
+header {
+    text-align: center;
+    background-color: var(--main-bg-color);
+    padding: 0%;
+}
+
+nav {
+    text-align: center;
+    background-color: var(--main-bg-color);
+    padding-top: 1%;
+    margin-bottom: 3%;
+    text-transform: uppercase;
+}
+
+nav a {
+    display: inline-block;
+    width: 15%;
+    margin: 0% 1% 0% 1%;
+}
+
+a {
+    color: var(--main-color);
+}
+
+a:visited {
+    color: var(--main-color);
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 0% 0%;
+    margin: 0;
+    max-width: 100%;
+}
+
+section {
+    background-color: var(--main-bg-color);
+}
+
+main>section {
+    background-color: var(--main-bg-color);
+}
+
+h1 {
+    color: var(--bold-color);
+    text-transform: uppercase;
+    padding: 1%;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+main>h1 {
+    text-align: center;
+}
+
+h2 {
+    color: var(--main-color);
+    text-align: center;
+}
+
+p {
+    color: var(--main-color);
+    text-indent: 2em;
+}
+
+footer>p {
+    text-indent: 0em;
+    max-width: 100%;
+}
+
+fieldset>p {
+    padding: 0%;
+    max-width: 70ch;
+}
+
+img {
+    max-width: 70%;
+    text-align: center;
+    margin: auto;
+    display: block;
+}
+
+figure {
+    width: fit-content;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+figcaption {
+    text-align: center;
+    font-size: larger;
+    padding: 1% 1% 2% 1%;
+    color: var(--main-color);
+}
+
+cite {
+    font-size: xx-small;
+}
+
+footer {
+    color: var(--main-bg-color);
+    background-color: var(--main-bg-color);
+    text-align: center;
+    padding: 0.5% 0% 0.5% 0%;
+}
+
+pre {
+    color: var(--main-color);
+}
+
+.bigpic {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 85%;
+    width: 100%;
+}
+
+.clothing {
+    size: 100%;
+    margin: 3%;
+}
+
+.discount {
+    color: red;
+}
+
+.alert {
+    color: var(--main-bg-color);
+    background-color: var(--bold-color);
+}
+
+.buy {
+    color: var(--main-bg-color);
+    background-color: var(--main-color);
+    padding: 2%;
+    text-align: center;
+    font-size: large;
+}
+
+.minlimit {
+    min-height: 25%;
+}
+
+.sizedown {
+    width: 50%;
+    height: 50%;
+}
+
+p,
+a,
+figcaption {
+    padding: 2%;
+}
+
+figcaption {
+    padding-top: 4%;
+}
+
+main {
+    padding-bottom: 2%;
+}
+
+
+
+/* TABLE TABLE TABLE TABLE TABLE TABLE TABLE TABLE TABLE TABLE TABLE TABLE */
+table {
+    color: var(--main-color);
+    border: solid var(--bold-color);
+    border-collapse: collapse;
+    max-width: 100%;
+    margin: auto;
+}
+
+caption {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+thead {
+    color: var(--bold-color);
+    background-color: var(--main-bg-color);
+}
+
+td {
+    border-style: dotted;
+}
+
+tr:nth-child(odd) {
+    background: var(--main-bg-color);
+}
+
+tr:nth-child(even) {
+    background: var(--alt-bg-color);
+}
+
+
+
+/* LIST LIST LIST LIST LIST LIST LIST LIST LIST LIST LIST LIST LIST LIST */
+ul {
+    color: var(--main-color);
+}
+
+li:nth-child(odd) {
+    background: var(--main-bg-color);
+}
+
+li:nth-child(even) {
+    background: var(--alt-bg-color);
+}
+
+
+
+/* FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM FORM */
+form {
+    text-indent: 0em;
+    margin: auto;
+    width: 100%;
+}
+
+legend,
+label {
+    background-color: var(--main-bg-color);
+    padding: 1%;
+    margin-top: 10%;
+    color: var(--main-color);
+}
+
+legend {
+    border: thin solid var(--main-color);
+    position: relative;
+    left: -2px
+}
+
+input {
+    width: 100%;
+    border: thick solid var(--bold-color);
+}
+
+fieldset {
+    padding: 1% 0% 1% 0%;
+    background-color: var(--main-bg-color)
+}
+
+input[type=text] {
+    padding: 1%;
+    width: 50%;
+}
+
+input[type=checkbox] {
+    width: 10%;
+}
+
+input[type=radio] {
+    width: 10%;
+}
+
+select {
+    width: 25%;
+}
+
+textarea {
+    width: 50%;
+    padding: 1%;
+    margin-right: auto;
+    margin-left: auto;
+    border: thick solid var(--bold-color);
+}
+
+.submit {
+    background: var(--bold-color);
+    color: var(--main-color);
+    font-size: large;
+    padding: 1%;
+}
+
+.submit:hover {
+    background-color: var(--alt-bg-color);
+    color: white;
+    transition: 1s;
+    transform: scale(1.1, 1.1);
+}
+
+pre {
+    background-color: var(--main-bg-color);
+}
+
+fieldset,
+input,
+label {
+    padding: 3%;
+}
+
+
+
+/* INDEX PAGE INDEX PAGE INDEX PAGE INDEX PAGE INDEX PAGE INDEX PAGE INDEX PAGE INDEX PAGE */
+#index main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-gap: 0%;
+    justify-content: center;
+    align-content: start;
+}
+
+#index .new {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#index .sale {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#index .about {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    align-content: center;
+    padding: 0% 17% 0% 17%;
+}
+
+
+
+/* MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN MEN */
+#men main {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto;
+    grid-gap: 0%;
+    justify-content: center;
+    align-content: center;
+}
+
+#men .item1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#men .item2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#men .item3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#men .item4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#men .item5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+
+/* WOMEN WOMEN WOMEN WOMEN WOMEN WOMEN WOMEN WOMEN WOMEN WOMEN WOMEN WOMEN WOMEN WOMEN WOMEN WOMEN WOMEN */
+#women main {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto;
+    grid-gap: 0%;
+    justify-content: center;
+    align-content: center;
+}
+
+#women .item1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#women .item2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#women .item3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#women .item4 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#women .item5 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+
+
+/* FORM PAGE FORM PAGE FORM PAGE FORM PAGE FORM PAGE FORM PAGE FORM PAGE FORM PAGE */
+#form main {
+    display: grid;
+    grid-template-columns: 55% auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 0%;
+    justify-content: center;
+    align-content: center;
+}
+
+#form main h1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#form .form-actual {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+#form .form-info {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#form .pic {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+/* FORM 2 PAGE FORM 2 PAGE FORM 2 PAGE FORM 2 PAGE FORM 2 PAGE FORM 2 PAGE FORM 2 PAGE FORM 2 PAGE */
+#review main {
+    display: grid;
+    grid-template-columns: 55% auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 0%;
+    justify-content: center;
+    align-content: center;
+}
+
+#review main h1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#review .form-actual {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+#review .form-info {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#review .pic {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+/* FORM 3 PAGE */
+#guitarForm main {
+    display: grid;
+    grid-template-columns: 55% auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 0%;
+    justify-content: center;
+    align-content: center;
+}
+
+#guitarForm main h1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+
+#guitarForm .form-actual {
+    grid-column: 1/2;
+    grid-row: 2/4;
+}
+
+#guitarForm .form-info {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#guitarForm .pic {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
